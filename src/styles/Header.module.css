@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper > a{
+    margin-left: 10px;
+}
+
+a{
+    font-size: 18px;
+    color: #50cefa;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #3fffff;
+}
