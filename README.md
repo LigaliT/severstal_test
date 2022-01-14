@@ -1,4 +1,4 @@
-# severstal_test
+# Северсталь - тестовое задание
 
 Используемые библиотеки: react, redux, saga, react-router
 

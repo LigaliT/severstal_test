@@ -11,10 +11,16 @@ const initialState = {
 export const signInReducer = (state = initialState, action) => {
     switch(action.type){
         case USER_SIGNIN_SUCCESS:{
-            return {...state, login: action.payload?.login, password: action.payload?.password};
+            return {...state,
+                login: action.payload?.login,
+                password: action.payload?.password,
+                isAuthenticated: true
+            };
         }
         case USER_SIGNIN_FAILED:{
-            return {...state, error: action.payload?.error};
+            return {...state,
+                error: action.payload?.error
+            };
         }
         default:
             return state;

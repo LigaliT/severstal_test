@@ -7,7 +7,10 @@ const Profile = () => {
 
     const signIn = useSelector((state) => state.signInReducer);
     const {isAuthenticated} = signIn;
-    useEffect(() => {},[isAuthenticated]);
+
+    useEffect(()=>{
+
+    }, [isAuthenticated])
 
     if(!isAuthenticated){
         return <Navigate to="/login"/>

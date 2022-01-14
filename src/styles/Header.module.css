@@ -5,11 +5,8 @@
     align-items: center;
 }
 
-.wrapper > a{
+.wrapper a{
     margin-left: 10px;
-}
-
-a{
     font-size: 18px;
     color: #50cefa;
     text-decoration: none;

@@ -17,7 +17,6 @@ function* watchUserSignInAsync(){
 
 export default function* rootSignInSaga(){
     yield all([
-        userSignInAsync(),
         watchUserSignInAsync()
     ])
 };
