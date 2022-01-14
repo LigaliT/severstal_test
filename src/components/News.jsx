@@ -15,14 +15,15 @@ const News = () => {
 
     let url = "https://newsapi.org/v2/top-headlines?pageSize=10&country=ru&apiKey=5673fb35222c4ce3910d081b382cedfa"
 
+    async function fetchData(){
+        let response = await fetch(url);
+        let json = await response.json();
+        setPosts(json.articles);
+        setLoading(false);
+    }
+
     useEffect(() => {
         setLoading(true);
-        async function fetchData(){
-            let response = await fetch(url);
-            let json = await response.json();
-            setPosts(json.articles);
-            setLoading(false);
-        }
         fetchData();
     },[]);
 
